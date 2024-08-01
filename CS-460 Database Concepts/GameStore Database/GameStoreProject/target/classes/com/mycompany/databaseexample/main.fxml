@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1280.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.databaseexample.MainController">
+   <children>
+      <MenuBar fx:id="menu" disable = "true" visible = "false">
+        <menus>
+          <Menu mnemonicParsing="false" text="Login">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#gotoMain" text="Go to Login Screen" />
+            </items>
+          </Menu>
+          <Menu fx:id ="databases" mnemonicParsing="false" text="Databases">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#account_login" text="Account Login" />
+                  <MenuItem mnemonicParsing="false" onAction="#account_detail" text="Account Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#genre" text="Genre" />
+                  <MenuItem mnemonicParsing="false" onAction="#games" text="Games" />
+                  <MenuItem mnemonicParsing="false" onAction="#game_genre" text="Game Genre" />
+                  <MenuItem mnemonicParsing="false" onAction="#mods" text="Mods" />
+                  <MenuItem mnemonicParsing="false" onAction="#mod_genre" text="Mod Genre" />
+                  <MenuItem mnemonicParsing="false" onAction="#game_library" text="Game Library" />
+                  <MenuItem mnemonicParsing="false" onAction="#mod_library" text="Mods Library" />
+                  <MenuItem mnemonicParsing="false" onAction="#audit" text="Audit" />
+                  <MenuItem mnemonicParsing="false" onAction="#transactions" text="Transactions" />
+            </items>
+          </Menu>
+          <Menu fx:id ="transactions" mnemonicParsing="false" text="Store">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#transactions_account_login" text="Account Login Information" />
+                  <MenuItem mnemonicParsing="false" onAction="#transactions_account_detail" text="Account Details" />
+                  <MenuItem mnemonicParsing="false" onAction="#transactions_game_library" text="Your Game Library" />
+                  <MenuItem mnemonicParsing="false" onAction="#transactions_mod_library" text="Your Mod Library" />
+                  <MenuItem mnemonicParsing="false" onAction="#transactions_games" text="Buy Games" />
+                  <MenuItem mnemonicParsing="false" onAction="#transactions_mods" text="Buy Mods" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <VBox fx:id="contentPane" prefHeight="776.0" prefWidth="1280.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                <children>
+                    <TextField fx:id="usernameTextField" prefWidth="175.0" promptText="Username" stylesheets="@styles.css" />
+                    <PasswordField fx:id="passwordTextField" prefWidth="175.0" promptText="Password" stylesheets="@styles.css" />
+                   
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#signInAttempt" prefHeight="34.0" prefWidth="136.0" styleClass="btn-primary" stylesheets="@styles.css" text="Sign In" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                <children>
+                    <Label id="content" styleClass="content-section" stylesheets="@demo.css" text="Hint: One of the accounts with admin access is 'World', 'Hello'! One without is 'Hello', 'World'!" />                
+                </children>
+            </HBox>
+                            
+
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                <ImageView fitHeight="700.0" fitWidth="1000.0" pickOnBounds="true" preserveRatio="true">
+                   <image>
+                      <Image url="@store_home_share.jpg" />
+                   </image>
+                </ImageView>
+
+            </HBox>
+            
+
+<!--            <TextField prefHeight="142.0" prefWidth="1280.0" text="Main" />-->
+         </children>
+      </VBox>
+   </children>
+</VBox>
