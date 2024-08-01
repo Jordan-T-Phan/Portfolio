@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycleView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-16dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/row_ticket_event" />
+
+    <TextView
+        android:id="@+id/noResultText"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="236dp"
+        android:text="@string/NoResults"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/EventTypeText"
+            android:layout_width="354dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:hint="@string/EventDescription"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="72dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="147dp"
+            android:onClick="goToFavorites"
+            android:text="Fav"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/CityTypeText"
+            android:layout_width="262dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/City"
+            android:inputType="text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/EventTypeText" />
+
+        <Button
+            android:id="@+id/Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="38dp"
+            android:backgroundTint="#ED2267"
+            android:onClick="searchButton"
+            android:text="@string/Search"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/FindTickets"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

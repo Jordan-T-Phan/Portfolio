@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "704688780523",
+    "project_id": "ticketmaster-d29af",
+    "storage_bucket": "ticketmaster-d29af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704688780523:android:0c9b0280c88bd83b6bfaae",
+        "android_client_info": {
+          "package_name": "com.example.ticketmaster30"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwrKQviwmKvetgPAp6XF7aeANLpxF7gm8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

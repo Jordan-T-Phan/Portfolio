@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Ticketmaster3.0</string>
+    <string name="EventDescription">Event Type or Keyword to search</string>
+    <string name="FindTickets">Find Tickets Around You</string>
+    <string name="Search">Search</string>
+    <string name="City">City</string>
+    <string name="NoResults">No results were found</string>
+    <string name="SeeTickets">See TIckets</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="Comments">Comments</string>
+    <string name="add">add</string>
+    <string name="update">Update</string>
+    <string name="Delete">Delete</string>
+    <string name="Name">Name</string>
+    <string name="id">id</string>
+    <string name="Favorites">Favorites</string>
+    <string name="click">Click on one of your favorites to check your comments</string>
+</resources>
