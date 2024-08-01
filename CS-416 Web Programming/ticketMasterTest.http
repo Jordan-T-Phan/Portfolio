@@ -1,0 +1,1 @@
+GET https://app.ticketmaster.com/discovery/v2/events.json?sort=date,asc&classificationName=music&city=hartford&apikey=v9I9u0Cd8x7LBlYmhCoNH8SodUerO9vn
